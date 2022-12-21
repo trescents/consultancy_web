@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "education-consultancy-uk",
+    "staging": "education-consultancy-uk"
+  },
+  "targets": {}
+}

@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #F6F6F6;
+  color: #013361;
+}
+
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.text-vs{
+  font-size: 10px;
+}
+
+a{
+  cursor: pointer;
+}
+
+.z-100{
+  z-index: 99999;
+}
+
+.bg-gray{
+  background-color: #F6F6F6;
+}
+
+.text-gray{
+  color: #979797;
+}
+
+.bg-blue{
+  background-color: #013361;
+}
+
+.bg-light-blue{
+  background-color: #C9EDFF;
+}
+
+.bg-btn{
+  background-image: linear-gradient(60deg, #FA6900, #FF00F5);
+}
+
+.bg-btn:hover{
+  background-image: linear-gradient(150deg, #FA6900, #FF00F5);
+}
+
+.bg-pink {
+  background-color: #FFEBF1;
+}
+
+.text-blue {
+  color: #013361;
+}
+
+.w-12 {
+  width: 3rem !important;
+}
+
+.w-8 {
+  width: 2.5rem !important;
+}
+
+
+.z-minus{
+  z-index: -1;
+}
+
+
+.section1{
+  background-repeat: no-repeat;
+  background-position: 0% 110%, 90% 33.6%;
+}
+
+.dimmer
+{
+    background:#000;
+    opacity:0.5;
+    position:fixed; /* important to use fixed, not absolute */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10; /* may not be necessary */
+}
+
+
+.messageBox {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fade-in{
+  animation: FadeIn 0.2s linear;
+}
+.fade-in-slow{
+  animation: FadeIn 0.5s linear;
+}
+.slide-down{
+  animation: SlideDown 0.2s linear;
+}
+
+.effect{
+  animation: updown 1s linear infinite alternate;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes SlideDown {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 100vh;
+  }
+}
+@media only screen and (max-width:786px) {
+  .w-12 {
+    width: 2rem !important;
+  }
+  .text-vs{
+    font-size: 8px !important;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  .services > div.owl-stage-outer > div.owl-stage > div.owl-item {
+    opacity: 0.7;
+  }
+  .center{
+    opacity: 1 !important;
+  }
+  .left-custom{
+    left: 45%;
+  }
+}
