@@ -1,4 +1,4 @@
-# Getting Started with React Starter Kit by Hamza
+# Getting Started with React Starter Kit by Ahmed
 
 ## Available Scripts
 
